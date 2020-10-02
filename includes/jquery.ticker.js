@@ -118,7 +118,7 @@
 				// add the controls to the DOM if required
 				if (opts.controls) {
 					// add related events - set functions to run on given event
-					$(document).on('click', $(settings.dom.controlsID) , function (e) {
+					$(document).on('click mouseover mousedown mouseout mouseup', $(settings.dom.controlsID) , function (e) {
 						var button = e.target.id;
 						if (e.type == 'click') {	
 							switch (button) {
